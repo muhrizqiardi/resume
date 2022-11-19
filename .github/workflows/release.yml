@@ -20,9 +20,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-      
-      - name: Rename main.pdf to resume.pdf
-        run: mv main.pdf resume.pdf
           
       - name: Release
         uses: softprops/action-gh-release@v1
