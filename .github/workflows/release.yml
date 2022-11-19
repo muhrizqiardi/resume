@@ -15,10 +15,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.5.0
+        
       - name: Generate PDF from resume.tex
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: ${{ github.action_path }}/resume.tex
+          root_file: resume.tex
       
       - name: Rename main.pdf to resume.pdf
         run: mv main.pdf resume.pdf
